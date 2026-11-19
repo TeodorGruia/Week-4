@@ -2,6 +2,7 @@
 //11/11/26
 //Week 4 - Pet Search
 
+//In order to use the photos I put into the assets folder, I must import them first
 import buddy from '/assets/Buddy.jpg';
 import carlos from '/assets/Carlos.jpg';
 import mittens from '/assets/Mittens.jpg';
@@ -9,7 +10,9 @@ import musha from '/assets/Musha.jpg';
 import tim from '/assets/Tim.jpeg';
 import mizzy from '/assets/Mizzy.jpg';
 
-//The JSON list of pets to use in the pet search dashboard
+//The JSON list of pets to use in the pet search dashboard. When creating lists of data, like photos, 
+//to be used in a web page in React, it's good practice to use an ID for identification and ordinal 
+//purposes
 export const pets = [
   {
     id: 1,

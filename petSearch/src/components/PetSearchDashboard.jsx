@@ -10,6 +10,7 @@ function PetSearchDashboard({ value }) {
   const petList = pets.filter(pet => pet.animal.toLowerCase() === value.toLowerCase());
 
   //The table of results 
+  //Includes various  tailwind formatting to make the table interesting
   const rowItems = petList.map(pet =>
     <tr className="text-red-400 hover:bg-green-100 transition-colors" key={pet.id}>
       <td className="px-2">

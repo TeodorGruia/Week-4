@@ -4,7 +4,7 @@
 
 import {useState} from 'react';
 import PetSearchDashboard from './components/PetSearchDashboard.jsx';
-//This build the web page using the petSearchDashborad component that I built
+//This build the web page using the petSearchDashboard component that I built
 function App () {
   //By default, there is no search value but that value changes and the component is updated with the new state
   //otherwise, the search has no value and no pets show up
@@ -22,7 +22,7 @@ function App () {
           onChange={(e)=>setSearch(e.target.value)}
           />
       </div>
-
+        {/* This is the table header, without any pet data. It tells us what is going to be in each column. */}
       <div >
         <table className="mx-auto w-300 text-left table-auto text-slate-900">
           <thead>
@@ -33,6 +33,7 @@ function App () {
               <th className="px-1 py-2">Photo</th>
             </tr>
           </thead>
+          {/* The values pulled in from the filter are injected here, involving the React component I made */}
             <tbody>
               <PetSearchDashboard value={search} />
             </tbody>
